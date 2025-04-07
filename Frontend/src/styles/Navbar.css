@@ -1,0 +1,74 @@
+/* Navbar inner container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Links container - aligned right */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Individual link styling */
+.navbar-link {
+  text-decoration: none;
+  color: #db2323;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #ffd700;
+  transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+.navbar-link:hover {
+  color: #ffd700;
+  transform: scale(1.05);
+}
+
+/* Active link styling */
+.navbar-link.active {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+/* Logo special effect */
+.logo-glow {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
