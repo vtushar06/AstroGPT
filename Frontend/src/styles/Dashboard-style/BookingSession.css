@@ -1,0 +1,33 @@
+.booking-sessions {
+  background-color: #f7f9fc; /* Light background */
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.booking-sessions h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.booking-sessions p {
+  font-size: 1rem;
+  color: #555; /* Subtle text color */
+  margin-bottom: 1.5rem;
+}
+
+.booking-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #6a11cb; /* Primary button color */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.booking-button:hover {
+  background-color: #4e0d9b; /* Darker shade on hover */
+}

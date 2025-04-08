@@ -1,0 +1,21 @@
+/* Navigation container */
+.navigation {
+  display: flex;
+  justify-content: flex-start; /* Align logo to the left */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #6a11cb; /* Purple background */
+  color: white;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.8rem; /* Larger font size for visibility */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  text-transform: uppercase; /* Make text uppercase for a professional look */
+}
+
+.logo:hover {
+  color: #ffd700; /* Gold hover effect to indicate interactivity */
+}

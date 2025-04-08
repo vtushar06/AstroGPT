@@ -1,0 +1,6 @@
+.daily-horoscope {
+  flex: 1;
+  background-color: #f7f9fc;
+  padding: 1.5rem;
+  border-radius: 10px;
+}

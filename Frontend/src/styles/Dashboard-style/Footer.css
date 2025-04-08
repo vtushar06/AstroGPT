@@ -1,0 +1,63 @@
+/* Footer container */
+.footer {
+  background-color: #6a11cb; /* Dark gradient background */
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Make it responsive */
+  gap: 2rem;
+}
+
+/* Footer sections */
+.footer-section {
+  flex: 1;
+  min-width: 200px; /* Ensure sections don't shrink too much */
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+  color: #ffd700; /* Gold hover effect */
+}
+
+/* Social media icons */
+.social-icons a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #ffd700; /* Gold hover effect */
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
