@@ -1,4 +1,4 @@
-.daily-horoscope {
+.daily-panchang {
   width: 45%; /* Adjust width */
   background-color: #fff; /* White background */
   padding: 1.5rem;
@@ -10,11 +10,11 @@
   align-items: center; /* Center content horizontally */
 }
 
-.daily-horoscope h2 {
+.daily-panchang h2 {
   margin-bottom: 1rem; /* Add spacing below heading */
 }
 
-.daily-horoscope p {
+.daily-panchang p {
   font-size: 1rem; /* Standardize font size */
 }
 
@@ -31,6 +31,6 @@
 }
 
 .action-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-  transform: scale(1.05); /* Slightly enlarge button on hover */
+  background-color: #0056b3;
+  transform: scale(1.05);
 }

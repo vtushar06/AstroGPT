@@ -1,4 +1,36 @@
 .kundli-section {
-  flex: 1;
-  background-color: #f7f9fc;
+  width: 45%; /* Adjust width to match other components */
+  background-color: #fff; /* White background */
+  padding: 1.5rem; /* Consistent padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.kundli-section h2 {
+  margin-bottom: 1rem; /* Add spacing below heading */
+}
+
+.kundli-section p {
+  font-size: 1rem; /* Standardize font size */
+}
+
+.action-button {
+  margin-top: auto; /* Ensure consistent spacing */
+  padding: 0.75rem 1.5rem; /* Standardize button size */
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff; /* Button color */
+  color: #fff; /* Text color */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease-in-out; /* Smooth animation */
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }

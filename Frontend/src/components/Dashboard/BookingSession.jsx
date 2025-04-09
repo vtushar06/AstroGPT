@@ -6,7 +6,7 @@ const BookingSessions = () => {
     <section id="booking" className="booking-sessions">
       <h2>Book a Session</h2>
       <p>Connect with expert astrologers for personalized guidance.</p>
-      <button className="booking-button">Book Now</button>
+      <button className="action-button">Book Now</button>
     </section>
   );
 };

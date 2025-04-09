@@ -17,17 +17,19 @@
   color: #555; /* Subtle text color */
   margin-bottom: 1.5rem;
 }
-
-.booking-button {
+.action-button {
+  margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #6a11cb; /* Primary button color */
-  color: white; /* White text */
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 8px;
+  background-color: #007bff; /* Button color */
+  color: #fff; /* Text color */
   font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth animation */
 }
 
-.booking-button:hover {
-  background-color: #4e0d9b; /* Darker shade on hover */
+.action-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
