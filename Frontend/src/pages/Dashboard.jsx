@@ -9,6 +9,7 @@ import BookingSessions from "../components/Dashboard/BookingSession";
 import PaymentSection from "../components/Dashboard/PaymentSection";
 import Footer from "../components/Dashboard/Footer";
 import RashiScroller from "../components/Dashboard/RashiScroller"; // Import the RashiScroller component
+import Astrologers from "../components/Dashboard/Astrologers";
 
 const Dashboard = () => {
   const [message, setMessage] = useState(""); // Message fetched from backend
@@ -47,6 +48,9 @@ const Dashboard = () => {
       <main className="dashboard-main">
         {/* Hero Section */}
         <HeroSection />
+
+        {/* Astrologers Section */}
+        <Astrologers />
 
         {/* Booking Sessions Section */}
         <BookingSessions />

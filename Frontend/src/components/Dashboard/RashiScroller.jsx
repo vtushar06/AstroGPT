@@ -2,22 +2,30 @@ import React, { useState } from "react";
 import "../../styles/Dashboard-style/RashiScroller.css"; // Import custom styles
 
 const rashis = [
-  { id: "aries", name: "Aries", img: "../../../aries.jpg" },
-  { id: "taurus", name: "Taurus", img: "../../../tauras.jpg" },
-  { id: "gemini", name: "Gemini", img: "../../../gemini.jpg" },
-  { id: "cancer", name: "Cancer", img: "../../../cancer.jpg" },
-  { id: "leo", name: "Leo", img: "../../../leo.webp" },
-  { id: "virgo", name: "Virgo", img: "../../../virgo.jpg" },
-  { id: "libra", name: "Libra", img: "../../../libra.jpg" },
-  { id: "scorpio", name: "Scorpio", img: "../../../scorpio.jpg" },
+  { id: "aries", name: "Aries", img: "../../../RashiScroller/aries.jpg" },
+  { id: "taurus", name: "Taurus", img: "../../../RashiScroller/tauras.jpg" },
+  { id: "gemini", name: "Gemini", img: "../../../RashiScroller/gemini.jpg" },
+  { id: "cancer", name: "Cancer", img: "../../../RashiScroller/cancer.jpg" },
+  { id: "leo", name: "Leo", img: "../../../RashiScroller/leo.webp" },
+  { id: "virgo", name: "Virgo", img: "../../../RashiScroller/virgo.jpg" },
+  { id: "libra", name: "Libra", img: "../../../RashiScroller/libra.jpg" },
+  { id: "scorpio", name: "Scorpio", img: "../../../RashiScroller/scorpio.jpg" },
   {
     id: "sagittarius",
     name: "Sagittarius",
-    img: "../../../sagittarius.jpg",
+    img: "../../../RashiScroller/sagittarius.jpg",
   },
-  { id: "capricorn", name: "Capricorn", img: "../../../capricorn.webp" },
-  { id: "aquarius", name: "Aquarius", img: "../../../pisces.jpg" },
-  { id: "pisces", name: "Pisces", img: "../../../pisces.jpg" },
+  {
+    id: "capricorn",
+    name: "Capricorn",
+    img: "../../../RashiScroller/capricorn.webp",
+  },
+  {
+    id: "aquarius",
+    name: "Aquarius",
+    img: "../../../RashiScroller/pisces.jpg",
+  },
+  { id: "pisces", name: "Pisces", img: "../../../RashiScroller/pisces.jpg" },
 ];
 
 const RashiScroller = () => {

@@ -3,6 +3,7 @@
   width: 100%;
   overflow-x: hidden;
   position: relative;
+  margin-top: 1rem;
 }
 
 /* The track that holds all rashi items */

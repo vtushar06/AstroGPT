@@ -1,0 +1,50 @@
+.blog-section {
+  padding: 2rem;
+  background-color: #f7f9fc; /* Light background color */
+}
+
+.blog-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.blog-subheading {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-between; /* Distribute cards evenly */
+  gap: 1rem; /* Add space between cards */
+}
+
+.blog-card {
+  width: calc(33.33% - 1rem); /* Adjust width for three cards */
+  background-color: #fff; /* White card background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog-content {
+  padding: 1rem;
+}
+
+.blog-title {
+  font-size: 1.25rem;
+}
+
+.blog-author,
+.blog-date,
+.blog-views {
+  font-size: 0.875rem;
+}

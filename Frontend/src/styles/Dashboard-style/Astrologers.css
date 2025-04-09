@@ -1,0 +1,103 @@
+/* Section styling */
+.astrologers-section {
+  padding: 2rem;
+  background-color: #ffffff; /* Light background color */
+}
+
+.astrologers-heading {
+  text-align: center;
+  font-size: 2.5rem; /* Increased font size for heading */
+  font-weight: bold;
+}
+
+.astrologers-subheading {
+  text-align: center;
+  font-size: 1.2rem; /* Slightly larger subheading */
+  margin-top: 0.5rem;
+}
+
+/* Carousel container styling */
+.carousel-container {
+  position: relative; /* For positioning arrows */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Carousel styling */
+.carousel {
+  display: flex; /* Flexbox for horizontal alignment */
+  gap: 2rem; /* Increased space between cards */
+  overflow-x: hidden; /* Hide overflowing content */
+}
+
+.astrologer-card {
+  flex-shrink: 0; /* Prevent shrinking of cards */
+  width: 300px; /* Increased width for larger cards */
+  background-color: #fff; /* White card background */
+  border-radius: 12px; /* Slightly larger rounded corners */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  padding: 1.5rem; /* Increased padding for larger cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.astrologer-card h3 {
+  font-size: 1.5rem; /* Larger font size for titles */
+}
+
+.astrologer-card p {
+  font-size: 1.2rem; /* Larger font size for descriptions */
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 200px; /* Increased height for images */
+  background-color: #eaeaea; /* Placeholder background color */
+  border-radius: 12px; /* Match card border radius */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder img {
+  width: auto;
+  height: 100%; /* Ensure images fit within the fixed height */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+/* Arrow button styling */
+
+/* Arrow button styling */
+.arrow-btn {
+  position: absolute;
+  top: 50%; /* Center vertically */
+
+  background-color: #007bff; /* Button color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 50%; /* Circular shape */
+  width: 50px; /* Increased size for better visibility */
+  height: 50px; /* Increased size for better visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10; /* Ensure buttons are above other elements */
+}
+
+.arrow-btn.left-arrow {
+  left: 10px; /* Position the left arrow */
+}
+
+.arrow-btn.right-arrow {
+  right: 10px; /* Position the right arrow */
+}
+
+.arrow-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.5); /* Slightly enlarge button on hover */
+}

@@ -31,3 +31,22 @@
 .hero-section > div p {
   font-size: 1rem;
 }
+.hero-heading {
+  width: 100%; /* Full width for heading and paragraph */
+  text-align: center; /* Center-align text */
+  margin-bottom: 1rem; /* Add spacing below heading */
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 10px;
+  background-color: #f7f9fc;
+}
+
+.hero-heading h2 {
+  font-size: 2rem; /* Larger font size for heading */
+  font-weight: bold;
+}
+
+.hero-heading p {
+  font-size: 1rem; /* Standard font size for paragraph */
+  color: #555; /* Subtle text color */
+}
