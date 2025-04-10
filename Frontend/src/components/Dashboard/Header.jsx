@@ -10,8 +10,10 @@ const Header = () => {
         <Link to="/">AstroGPT</Link>
       </div>
       <nav className="nav-links">
-        <a href="#horoscope">Daily Horoscope</a>
-        <a href="#kundli">Kundli</a>
+        <a href="#services">Book Services</a>
+        <a href="#blog">Blog</a>
+        <a href="#astrologers">Astrologers</a>
+
         <a href="#booking">Book Session</a>
         <a href="#payment">Payment</a>
       </nav>

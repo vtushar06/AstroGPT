@@ -1,21 +1,60 @@
 .payment-section {
-  background-color: #f7f9fc; /* Light background */
-  padding: 2rem;
+  padding: 4rem 2rem;
+  background-color: #f4edfc;
+  border-radius: 20px;
+  margin: 2rem 0;
+}
+
+.payment-title {
   text-align: center;
-  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #301860;
+  margin-bottom: 2rem;
 }
 
-.payment-section h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.payment-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.payment-section p {
-  font-size: 1rem;
-  color: #555; /* Subtle text color */
+.payment-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  flex: 1 1 280px;
+  max-width: 300px;
 }
 
-.payment-button {
-  padding: 0.75rem 1.5rem;
+.payment-card-title {
+  color: #4b0082;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.payment-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+.payment-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-btn:hover {
+  background-color: #e05b5b;
 }

@@ -1,52 +1,46 @@
-/* .hero-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-} */
 .hero-section {
-  display: flex; /* Flexbox for horizontal alignment */
-  justify-content: space-between; /* Space between items */
-  align-items: stretch; /* Ensure all items have the same height */
-  flex-wrap: wrap; /* Wrap items if the screen is too small */
-  gap: 1rem; /* Add space between items */
-  padding: 2rem; /* Add padding to the section */
+  background-color: #f5efff; /* Violet gradient */
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 0 0 20px 20px;
+  color: white;
 }
 
-.hero-section > div {
-  flex: 1; /* All components take equal width */
-  max-width: 22%; /* Ensure equal width for all components */
-  background-color: #fff; /* White background for each card */
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
-  display: flex; /* Flexbox for inner content alignment */
-  flex-direction: column; /* Stack inner content vertically */
-  justify-content: space-between; /* Distribute inner content evenly */
-}
-
-.hero-section > div h2 {
-  margin-bottom: 1rem;
-}
-
-.hero-section > div p {
-  font-size: 1rem;
-}
 .hero-heading {
-  width: 100%; /* Full width for heading and paragraph */
-  text-align: center; /* Center-align text */
-  margin-bottom: 1rem; /* Add spacing below heading */
-  margin-top: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 10px;
-  background-color: #f7f9fc;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-.hero-heading h2 {
-  font-size: 2rem; /* Larger font size for heading */
+.hero-heading h1 {
+  font-size: 2.2rem;
   font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #000000;
 }
 
 .hero-heading p {
-  font-size: 1rem; /* Standard font size for paragraph */
-  color: #555; /* Subtle text color */
+  font-size: 1rem;
+  color: #000000;
+}
+
+.hero-section > div:not(.hero-heading) {
+  flex: 1;
+  max-width: 22%;
+  background-color: #ffffff;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s;
+}
+
+.hero-section > div:not(.hero-heading):hover {
+  transform: translateY(-5px);
 }

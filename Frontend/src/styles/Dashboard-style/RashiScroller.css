@@ -3,14 +3,22 @@
   width: 100%;
   overflow-x: hidden;
   position: relative;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  padding: 1rem 0;
+  background: linear-gradient(
+    to right,
+    #e0c3fc,
+    #8ec5fc
+  ); /* Pastel Violet to Light Blue */
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 /* The track that holds all rashi items */
 .rashi-track {
   display: flex;
-  gap: 30px; /* Space between items */
-  animation: scroll-left 30s linear infinite; /* Smooth scrolling animation */
+  gap: 40px;
+  animation: scroll-left 25s linear infinite;
 }
 
 /* Individual rashi item styling */
@@ -19,34 +27,60 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 12px;
 }
 
+.rashi-item:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 215, 0, 0.1); /* soft gold on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Rashi Image */
 .rashi-img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
 }
 
+.rashi-item:hover .rashi-img {
+  border-color: #ffd700;
+}
+
+/* Rashi text */
 .rashi-item p {
   margin-top: 10px;
+  font-weight: 500;
+  color: #333333;
 }
 
 /* Active styling for selected Rashi */
 .rashi-item.active {
-  border-bottom: 2px solid #007bff;
+  border-bottom: 3px solid #6a11cb;
+  background-color: rgba(106, 17, 203, 0.1);
+  border-radius: 12px;
 }
 
 /* Keyframes for horizontal scrolling animation */
 @keyframes scroll-left {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
+  100% {
     transform: translateX(-100%);
   }
 }
 
-/* Horoscope data styling */
+/* Horoscope data section */
 .horoscope-data {
-  margin-top: 20px;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }

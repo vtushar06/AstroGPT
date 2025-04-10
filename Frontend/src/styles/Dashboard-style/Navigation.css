@@ -4,10 +4,9 @@
   justify-content: flex-start; /* Align logo to the left */
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #6a11cb; /* Purple background */
+  background-color: hsl(50, 66%, 7%); /* Purple background */
   color: white;
 }
-
 /* Logo styling */
 .logo {
   font-size: 1.8rem; /* Larger font size for visibility */

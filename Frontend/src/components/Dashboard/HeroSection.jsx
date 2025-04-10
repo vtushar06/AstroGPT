@@ -6,22 +6,35 @@ import DailyPanchang from "./DailyPanchang";
 import BookPooja from "./BookPooja";
 import BlogSection from "./BlogSection";
 
+// const HeroSection = () => {
+//   return (
+//     <>
+//       <div id="services" className="hero-heading">
+//         <h2>Book Our Services</h2>
+//         <p>As your wish</p>
+//       </div>
+//       <section className="hero-section">
+//         <DailyHoroscope />
+//         <KundliSection />
+//         <DailyPanchang />
+//         <BookPooja />
+//       </section>
+//       <BlogSection />
+//     </>
+//   );
+// };
 const HeroSection = () => {
   return (
-    <>
+    <section className="hero-section">
       <div className="hero-heading">
-        <h2>Book Our Services</h2>
-        <p>As your wish</p>
+        <h1>Book Our Services</h1>
+        <p>As you wish</p>
       </div>
-      <section className="hero-section">
-        <DailyHoroscope />
-        <KundliSection />
-        <DailyPanchang />
-        <BookPooja />
-      </section>
-      <BlogSection />
-    </>
+      <DailyHoroscope />
+      <KundliSection />
+      <DailyPanchang />
+      <BookPooja />
+    </section>
   );
 };
-
 export default HeroSection;

@@ -30,7 +30,7 @@ const BlogSection = () => {
   ];
 
   return (
-    <section className="blog-section">
+    <section id="blog" className="blog-section">
       <h2 className="blog-heading">LATEST FROM BLOG</h2>
       <p className="blog-subheading">
         Top Astrologers. 24*7 customer support. Happy to help.

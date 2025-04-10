@@ -1,35 +1,65 @@
 .booking-sessions {
-  background-color: #f7f9fc; /* Light background */
-  padding: 2rem;
+  background-color: #f5efff;
+  padding: 50px 20px;
   text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.booking-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option-card {
+  background-color: #fff;
   border-radius: 10px;
-  margin: 2rem 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Adjust width for responsiveness */
 }
 
-.booking-sessions h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.option-card h3 {
+  font-size: 1.5rem;
+  color: #444;
 }
 
-.booking-sessions p {
+.option-card p {
   font-size: 1rem;
-  color: #555; /* Subtle text color */
-  margin-bottom: 1.5rem;
+  color: #666;
 }
+
 .action-button {
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
+  background-color: #4caf50; /* Green button */
+  color: white;
   border: none;
-  border-radius: 8px;
-  background-color: #007bff; /* Button color */
-  color: #fff; /* Text color */
-  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth animation */
 }
 
 .action-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 20px 0;
 }

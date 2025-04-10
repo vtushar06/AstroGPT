@@ -10,6 +10,7 @@ import PaymentSection from "../components/Dashboard/PaymentSection";
 import Footer from "../components/Dashboard/Footer";
 import RashiScroller from "../components/Dashboard/RashiScroller"; // Import the RashiScroller component
 import Astrologers from "../components/Dashboard/Astrologers";
+import WhyAstrology from "../components/Dashboard/WhyAstrology";
 
 const Dashboard = () => {
   const [message, setMessage] = useState(""); // Message fetched from backend
@@ -57,6 +58,8 @@ const Dashboard = () => {
 
         {/* Payment Section */}
         <PaymentSection />
+
+        <WhyAstrology />
       </main>
 
       {/* Footer */}

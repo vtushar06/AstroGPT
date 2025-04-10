@@ -1,0 +1,45 @@
+.why-astrology-section {
+  background-color: #f5efff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.why-astrology-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.content-block {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.content-block h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.content-block p,
+.content-block ul {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.content-block ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}

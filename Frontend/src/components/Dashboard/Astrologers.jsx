@@ -51,7 +51,7 @@ const Astrologers = () => {
   };
 
   return (
-    <section className="astrologers-section">
+    <section id="astrologers" className="astrologers-section">
       <h2 className="astrologers-heading">OUR ASTROLOGERS</h2>
       <p className="astrologers-subheading">
         13000+ Best Astrologers from India for Online Consultation
