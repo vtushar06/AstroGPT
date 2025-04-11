@@ -5,6 +5,10 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
+import KundliMatching from "./components/InnerPage/KundliMatching";
+import HoroscopePage from "./components/InnerPage/HoroscopePage";
+import PanchangPage from "./components/InnerPage/PanchangPage";
+import Upgradingpage from "./components/InnerPage/Upgradingpage";
 const App = () => {
   return (
     <Router>
@@ -37,9 +41,12 @@ const App = () => {
             </>
           }
         />
-
         {/* Pages without Navbar */}
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/kundlimatching" element={<KundliMatching />} />
+        <Route path="/horoscope" element={<HoroscopePage />} />
+        <Route path="/panchang" element={<PanchangPage />} />
+        <Route path="/upgrading" element={<Upgradingpage />} />
       </Routes>
     </Router>
   );

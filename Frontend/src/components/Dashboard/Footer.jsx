@@ -10,16 +10,19 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="#horoscope">Daily Horoscope</a>
+              <a href="#services">Book Services</a>
             </li>
             <li>
-              <a href="#kundli">Kundli</a>
+              <a href="#blog">Blog</a>
             </li>
             <li>
-              <a href="#booking">Book a Session</a>
+              <a href="#astrologers">Astrologers</a>
             </li>
             <li>
-              <a href="#payment">Payment History</a>
+              <a href="#booking">Book Session</a>
+            </li>
+            <li>
+              <a href="#payment">Payment</a>
             </li>
           </ul>
         </div>
@@ -28,49 +31,67 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p>Email: support@astrogpt.com</p>
-          <p>Phone: +1 234 567 890</p>
-          <p>Address: 123 Astro Street, Galaxy City</p>
+          <p>Phone: +91 9105725631</p>
+          <p>Address: New Delhi,India</p>
         </div>
 
         {/* Social Media Links */}
+        {/* Social Media Section */}
         <div className="footer-section">
-          <h3>Follow Us</h3>
-          <div className="social-icons">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+          <h3>Follow Me</h3>
+          <ul className="social-links">
+            {/* LinkedIn Profile */}
+            <li>
+              <a
+                href="https://www.linkedin.com/in/tushar-verma-851a76338/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <img
+                  src="./../../../Icon/linkedin.png"
+                  alt="LinkedIn"
+                  className="social-icon"
+                />
+                LinkedIn
+              </a>
+            </li>
 
-      {/* Copyright Section */}
-      <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} AstroGPT. All rights reserved.
+            {/* GitHub Profile */}
+            <li>
+              <a
+                href="https://github.com/vtushar06"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <img
+                  src="./../../../Icon/github.png"
+                  alt="GitHub"
+                  className="social-icon"
+                />
+                GitHub
+              </a>
+            </li>
+
+            {/* Personal Website */}
+            <li>
+              <a
+                href="https://personal-website-chi-cyan.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <img
+                  src="./../../../Icon/coding.png"
+                  alt="Website"
+                  className="social-icon"
+                />
+                Website
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

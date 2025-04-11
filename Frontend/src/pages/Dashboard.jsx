@@ -11,6 +11,7 @@ import Footer from "../components/Dashboard/Footer";
 import RashiScroller from "../components/Dashboard/RashiScroller"; // Import the RashiScroller component
 import Astrologers from "../components/Dashboard/Astrologers";
 import WhyAstrology from "../components/Dashboard/WhyAstrology";
+import BlogSection from "../components/Dashboard/BlogSection";
 
 const Dashboard = () => {
   const [message, setMessage] = useState(""); // Message fetched from backend
@@ -49,6 +50,7 @@ const Dashboard = () => {
       <main className="dashboard-main">
         {/* Hero Section */}
         <HeroSection />
+        <BlogSection />
 
         {/* Astrologers Section */}
         <Astrologers />

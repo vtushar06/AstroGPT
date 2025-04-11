@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { SiAstro } from "react-icons/si"; // Astro icon
 import "../styles/Navbar.css";
+// Import the SVG logo
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -23,9 +23,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Stylish Logo */}
+        {/* Updated Logo with SVG */}
         <NavLink to="/" className="navbar-logo">
-          <SiAstro className="logo-icon" />
+          <img
+            src="../../public/Icon/sun.png"
+            alt="AstroGPT Logo"
+            className="logo-icon"
+          />
           <span className="logo-text">AstroGPT</span>
         </NavLink>
 

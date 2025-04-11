@@ -6,31 +6,31 @@ const Astrologers = () => {
   const astrologers = [
     {
       id: 1,
-      name: "Vinod",
+      name: "Dr. Aasha parikh",
       specialty: "Vedic Astrology",
       image: "../../../public/Astrologers/astro1.webp",
     },
     {
       id: 2,
-      name: "Parveen",
+      name: "Santosh Giri",
       specialty: "Numerology",
       image: "../../../public/Astrologers/astro1.jpg",
     },
     {
       id: 3,
-      name: "Sujata",
+      name: "Dr Smitha Jain",
       specialty: "Vedic Astrology",
       image: "../../../public/Astrologers/astro2.jpg",
     },
     {
       id: 4,
-      name: "Deepaa",
+      name: "Aaishwarya Sharma",
       specialty: "Vedic Astrology",
       image: "../../../public/Astrologers/astro3.jpg",
     },
     {
       id: 5,
-      name: "Ankit",
+      name: "Dr Monali Garg",
       specialty: "Palmistry",
       image: "../../../public/Astrologers/astro4.jpeg",
     },

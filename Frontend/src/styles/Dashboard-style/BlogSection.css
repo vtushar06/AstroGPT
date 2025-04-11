@@ -1,6 +1,7 @@
 .blog-section {
   padding: 2rem;
-  background-color: #f7f9fc; /* Light background color */
+  background-color: #f4edfc;
+  margin: 32px 0; /* Light background color */
 }
 
 .blog-heading {

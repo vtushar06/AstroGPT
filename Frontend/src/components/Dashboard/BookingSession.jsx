@@ -1,43 +1,55 @@
 import React from "react";
-import "../../styles/Dashboard-style/BookingSession.css"; // Import your CSS file
+import "../../styles/Dashboard-style/BookingSession.css"; // Import the CSS file
+import { useNavigate } from "react-router-dom";
 
-const BookingSessions = () => {
+const BookingSession = () => {
+  const sessions = [
+    {
+      id: "1",
+      title: "Book a Video Call",
+      details:
+        "Schedule a video call with our experts to discuss your requirements in detail.",
+    },
+    {
+      id: "2",
+      title: "Book a Call",
+      details:
+        "Reserve a time slot for a phone call to talk about your needs and queries.",
+    },
+    {
+      id: "3",
+      title: "Past Calls",
+      details:
+        "View details of your previous calls and access any relevant notes or recordings.",
+    },
+  ];
+  const Navigate = useNavigate(); // Initialize navigation
+  const handleClick = () => {
+    Navigate("/upgrading");
+  };
   return (
-    <section id="booking" className="booking-sessions">
-      <div className="container">
-        <h2 className="section-title">Book a Session</h2>
-        <p className="section-description">
-          Connect with expert astrologers for personalized guidance on your
-          career, relationships, health, and more. Choose from a variety of
-          services tailored to your needs.
-        </p>
+    <div id="booking" className="booking-session">
+      {/* Title */}
+      <h1 className="booking-session-title">Manage Your Sessions</h1>
 
-        <div className="booking-options">
-          <div className="option-card">
-            <h3>Live Chat</h3>
-            <p>
-              Instantly connect with astrologers via chat for quick guidance.
-            </p>
-            <button className="action-button">Start Chat</button>
-          </div>
-          <div className="option-card">
-            <h3>Video Call</h3>
-            <p>Schedule a detailed video consultation for in-depth analysis.</p>
-            <button className="action-button">Book Video Call</button>
-          </div>
-          <div className="option-card">
-            <h3>Phone Call</h3>
-            <p>Speak directly with astrologers for personalized advice.</p>
-            <button className="action-button">Call Now</button>
-          </div>
-        </div>
+      <p className="booking-subheading">Manage Your Calls and History</p>
 
-        <p className="note">
-          * First-time users can avail a 50% discount on their first session!
-        </p>
+      {/* Cards Section */}
+      <div className="booking-cards">
+        {sessions.map((session, index) => (
+          <div className="booking-card" key={index}>
+            <h2 className="booking-card-title">{session.title}</h2>
+            <p>{session.details}</p>
+            {session.id !== "3" && ( // Hide button for Past Calls
+              <button className="booking-btn" onClick={handleClick}>
+                Book Now
+              </button>
+            )}
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
-export default BookingSessions;
+export default BookingSession;

@@ -3,7 +3,7 @@ import "../../styles/Dashboard-style/WhyAstrology.css"; // Add custom styles for
 
 const WhyAstrology = () => {
   return (
-    <section className="why-astrology-section">
+    <section id="about" className="why-astrology-section">
       <div className="container">
         <h2 className="section-title">Why Astrology?</h2>
         <p className="intro-text">

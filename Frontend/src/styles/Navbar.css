@@ -1,4 +1,15 @@
-/* Navbar inner container */
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  background: linear-gradient(to right, #4b0082, #6a11cb); /* Dark background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for navbar */
+}
+
+/* Navbar Inner Container */
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -6,25 +17,51 @@
   width: 100%;
 }
 
-/* Links container - aligned right */
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 40px; /* Adjust size of the logo icon */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+.logo-text {
+  color: #ffffff; /* Gold color for logo text */
+  font-size: 1.8rem; /* Adjust font size */
+  font-weight: 700;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+.logo-text:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+/* Navigation Links Section */
 .navbar-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.5rem; /* Space between links */
   margin-left: auto;
-  align-items: center;
-  justify-content: flex-end;
+  margin-top: 8px;
+  /* Align links to the right */
 }
 
-/* Individual link styling */
 .navbar-link {
   text-decoration: none;
-  color: #db2323;
-  font-size: 1rem;
-  font-weight: 500;
+  color: #ffffff; /* Red color for links */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 700;
   position: relative;
   transition: all 0.3s ease;
+
+  /* Smooth transition for hover effects */
 }
 
+/* Hover Effect for Links */
 .navbar-link::after {
   content: "";
   position: absolute;
@@ -32,31 +69,36 @@
   height: 2px;
   bottom: -3px;
   left: 0;
-  background-color: #ffd700;
-  transition: width 0.3s ease;
+  background-color: #ffd700; /* Gold underline effect */
+  transition: width 0.3s ease; /* Smooth transition for underline animation */
 }
 
 .navbar-link:hover::after {
-  width: 100%;
+  width: 100%; /* Expand underline on hover */
 }
 
 .navbar-link:hover {
-  color: #ffd700;
-  transform: scale(1.05);
+  color: #ffd700; /* Gold color on hover */
 }
 
-/* Active link styling */
+/* Active Link Styling */
 .navbar-link.active {
-  color: #ffd700;
-  border-bottom: 2px solid #ffd700;
+  color: #ffd700; /* Gold color for active link */
 }
-/* Logo special effect */
-.logo-glow {
-  color: #ffd700;
-  font-size: 1.2rem;
-  margin-right: 0.3rem;
-  animation: pulse 2s infinite;
+
+/* Logout Button Styling */
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff; /* White text for button */
+  cursor: pointer;
 }
+
+.logout-button:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+/* Sticky Home Button (Optional) */
 
 .sticky-home-button {
   position: fixed;

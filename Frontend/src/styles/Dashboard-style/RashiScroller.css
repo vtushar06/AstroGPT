@@ -4,14 +4,12 @@
   overflow-x: hidden;
   position: relative;
   /* margin-top: 1rem; */
-  padding: 1rem 0;
+  padding: 0.8rem 0;
   background: linear-gradient(
     to right,
-    #e0c3fc,
-    #8ec5fc
+    #c38df7,
+    #7aa9d9
   ); /* Pastel Violet to Light Blue */
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
 }
 
 /* The track that holds all rashi items */
@@ -55,8 +53,9 @@
 /* Rashi text */
 .rashi-item p {
   margin-top: 10px;
-  font-weight: 500;
-  color: #333333;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Active styling for selected Rashi */
@@ -79,8 +78,31 @@
 /* Horoscope data section */
 .horoscope-data {
   margin-top: 2rem;
-  padding: 1rem;
-  background-color: #ffffff;
+  text-align: center;
+  background-color: #fef9ff;
+  padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.horoscope-data img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.horoscope-data h2 {
+  color: #4b0082;
+  margin-bottom: 1rem;
+}
+
+.horoscope-data p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 auto;
 }

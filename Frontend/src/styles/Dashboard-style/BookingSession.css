@@ -1,65 +1,73 @@
-.booking-sessions {
-  background-color: #f5efff;
-  padding: 50px 20px;
+/* Container styles */
+.booking-session {
+  padding: 4rem 2rem;
+  background-color: #f4edfc; /* Light purple background */
+  border-radius: 20px;
+  margin: 2rem 0;
+}
+
+/* Title styles */
+.booking-session-title {
   text-align: center;
+  font-size: 2.5rem; /* Matches .section-title */
+  font-weight: 700;
+  color: #301860; /* Dark purple */
+  margin-bottom: 1rem;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.section-description {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 40px;
-}
-
-.booking-options {
+/* Cards container styles */
+.booking-cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap; /* Wrap cards if needed */
+  gap: 2rem; /* Space between cards */
 }
 
-.option-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: calc(33.33% - 20px); /* Adjust width for responsiveness */
+/* Individual card styles */
+.booking-card {
+  background-color: #fff; /* White card background */
+  border-radius: 16px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  padding: 1.8rem 1.5rem;
+  text-align: center; /* Center content inside cards */
+  flex: 1 1 280px; /* Flexible width */
+  max-width: 300px; /* Maximum width for cards */
 }
 
-.option-card h3 {
-  font-size: 1.5rem;
-  color: #444;
+/* Card title styles */
+.booking-card-title {
+  color: #4b0082; /* Purple text color */
+  font-size: 1.5rem; /* Matches .option-card h3 */
+  font-weight: bold;
+  margin-bottom: 0.8rem;
 }
 
-.option-card p {
-  font-size: 1rem;
-  color: #666;
+/* Card details styles */
+.booking-card p {
+  color: #666666; /* Gray text color for details */
+  font-size: 1rem; /* Matches .option-card p */
+  margin-bottom: 1.2rem;
 }
 
-.action-button {
-  background-color: #4caf50; /* Green button */
+/* Button styles inside cards */
+.booking-btn {
+  background-color: #4caf50; /* Green button background */
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.action-button:hover {
-  background-color: #45a049; /* Darker green on hover */
+.booking-btn:hover {
+  background-color: #e05b5b; /* Red hover effect for button */
 }
 
-.note {
-  font-size: 0.9rem;
-  color: #888;
-  margin: 20px 0;
+.booking-subheading {
+  text-align: center;
+  font-size: 1.2rem; /* Slightly larger subheading */
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }

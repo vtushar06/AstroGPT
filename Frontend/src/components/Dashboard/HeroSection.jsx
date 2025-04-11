@@ -25,10 +25,9 @@ import BlogSection from "./BlogSection";
 // };
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <section id="services" className="hero-section">
       <div className="hero-heading">
         <h1>Book Our Services</h1>
-        <p>As you wish</p>
       </div>
       <DailyHoroscope />
       <KundliSection />

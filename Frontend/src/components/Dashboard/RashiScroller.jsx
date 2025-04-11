@@ -35,7 +35,7 @@ const RashiScroller = () => {
   // Function to fetch horoscope data from an API
   const fetchHoroscope = async (rashi) => {
     try {
-      const apiKey = "DEMO_KEY"; // Replace with your NASA API key or relevant API key
+      const apiKey = "oweycTl6S4ZMd9tem2fgc0vWF5SeejRgpg5Hwe93"; // Replace with your NASA API key or relevant API key
       const response = await fetch(
         `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
       );

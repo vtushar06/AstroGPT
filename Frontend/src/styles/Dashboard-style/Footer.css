@@ -1,6 +1,10 @@
 /* Footer container */
 .footer {
-  background: linear-gradient(to right, #4b0082, #6a11cb);
+  background: linear-gradient(
+    to right,
+    #4b0082,
+    #6a11cb
+  ); /* Gradient background */
   color: white;
   padding: 2rem;
   text-align: center;
@@ -18,11 +22,10 @@
 .footer-section {
   flex: 1;
   min-width: 200px; /* Ensure sections don't shrink too much */
-  color: rgb(255, 255, 255);
 }
 
 .footer-section h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem; /* Slightly larger font size for headings */
   margin-bottom: 1rem;
 }
 
@@ -37,7 +40,8 @@
 
 .footer-section ul li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white; /* White text color */
+  font-size: 1rem; /* Adjust font size for links */
   transition: color 0.3s ease-in-out;
 }
 
@@ -45,21 +49,34 @@
   color: #ffd700; /* Gold hover effect */
 }
 
-/* Social media icons */
-.social-icons a {
-  margin-right: 1rem;
-  font-size: 1.5rem;
-  color: white;
-  transition: color 0.3s ease-in-out;
+/* Social media icons container */
+/* Social Media Section */
+.social-links {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the icons */
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+  gap: 1rem; /* Space between items */
 }
 
-.social-icons a:hover {
+.social-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white; /* White text color */
+  font-size: 1rem; /* Adjust font size */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-link:hover {
   color: #ffd700; /* Gold hover effect */
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-/* Footer bottom section */
-.footer-bottom {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: rgb(255, 255, 255);
+.social-icon {
+  width: 30px; /* Icon size */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 0.5rem; /* Space between icon and text */
 }

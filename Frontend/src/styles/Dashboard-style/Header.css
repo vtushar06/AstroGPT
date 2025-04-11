@@ -30,6 +30,11 @@
 .logo a:hover {
   color: #ffd700; /* Gold hover effect */
 }
+.logo-icon {
+  width: 45px; /* Adjust size of the icon */
+  height: 45px; /* Adjust size of the icon */
+  margin-right: 10px; /* Space between icon and text */
+}
 .nav-links {
   display: flex;
   gap: 1.5rem;
@@ -37,7 +42,7 @@
 
 .nav-links a {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   color: #ffffff;
   padding: 0.4rem 0.6rem;
