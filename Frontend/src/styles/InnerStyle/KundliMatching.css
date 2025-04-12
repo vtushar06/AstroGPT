@@ -3,11 +3,22 @@ body {
   margin: 0;
   padding: 0;
 }
+.kundli-heading {
+  padding: 20px;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #000000;
+  font-weight: 650;
+}
 
 .kundli-container {
   max-width: 900px;
   margin: auto;
   padding: 20px;
+}
+p {
+  text-align: center;
+  font-size: 18px;
 }
 
 h1,
@@ -27,8 +38,9 @@ h2 {
 }
 
 .details-section h3 {
-  background-color: #ffd700; /* Yellow Header */
+  background: linear-gradient(to right, #770cc3, #8442cb); /* Yellow Header */
   margin: -15px -15px 10px -15px; /* Extend header */
+  color: white;
   padding: 10px;
 }
 
@@ -61,5 +73,9 @@ button:hover {
 }
 
 .login-btn {
-  background-color: #ffd700; /* Yellow Login Button */
+  background-color: linear-gradient(
+    to right,
+    #770cc3,
+    #8442cb
+  ); /* Yellow Login Button */
 }

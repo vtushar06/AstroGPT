@@ -56,8 +56,8 @@ const KundliMatching = () => {
 
   return (
     <div className="kundli-container">
-      <h1>Kundli Matching</h1>
-      <p>Find your right one, through matchmaking</p>
+      <h1 className="kundli-heading">Kundli Matching</h1>
+      <p>Find your right one, through AI-Matchmaking</p>
       <div className="form-section">
         <h2>Fill Up Partner's Detail</h2>
 

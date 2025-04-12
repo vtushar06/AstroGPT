@@ -38,8 +38,8 @@ const KundliSection = () => {
 
   return (
     <div className="kundli-section">
-      <h2>Kundli</h2>
-      <p>Generate your detailed birth chart.</p>
+      <h2>Kundli Matching</h2>
+      <p>Match to your Loved ones through power of Ai</p>
       <button className="action-button" onClick={handleButtonClick}>
         Generate Kundli
       </button>

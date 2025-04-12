@@ -87,7 +87,7 @@ const RashiScroller = () => {
         <div className="horoscope-data">
           <h2>{horoscopeData.rashi} Horoscope</h2>
           <p>{horoscopeData.data.explanation}</p>
-          <img src={horoscopeData.data.url} alt="Horoscope Image" />
+          {/* <img src={horoscopeData.data.url} alt="Horoscope Image" /> */}
         </div>
       )}
     </div>

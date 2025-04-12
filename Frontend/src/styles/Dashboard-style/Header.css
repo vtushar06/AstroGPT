@@ -69,3 +69,61 @@
   object-fit: cover;
   border: 2px solid #fff;
 }
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Add spacing below the logo */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 1rem; /* Add spacing between links */
+    width: 100%; /* Take full width */
+  }
+
+  .nav-links a {
+    text-align: left; /* Align links to the left */
+    padding: 0.6rem; /* Adjust padding for better touch targets */
+    width: 100%; /* Make links take full width */
+  }
+
+  .profile {
+    margin-top: 1rem; /* Add spacing above the profile section */
+    width: 100%; /* Make profile section take full width */
+    justify-content: flex-start; /* Align profile to the start */
+  }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show menu toggle button only on smaller screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
