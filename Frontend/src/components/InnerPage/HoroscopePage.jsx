@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../../styles/Innerstyle/HoroscopePage.css";
+import "../../styles/InnerStyle/HoroscopePage.css";
 
 const HoroscopePage = () => {
   const [horoscopes, setHoroscopes] = useState([]);
@@ -19,28 +19,6 @@ const HoroscopePage = () => {
     "pisces",
   ];
 
-  // useEffect(() => {
-  //   const fetchHoroscopes = async () => {
-  //     try {
-  //       const promises = rashis.map((rashi) =>
-  //         axios.get(
-  //           `http://horoscope-api.herokuapp.com/horoscope/today/${rashi}`
-  //         )
-  //       );
-  //       const responses = await Promise.all(promises);
-  //       const data = responses.map((response) => ({
-  //         rashi: response.data.sunsign,
-  //         date: response.data.date,
-  //         horoscope: response.data.horoscope,
-  //       }));
-  //       setHoroscopes(data.sort((a, b) => a.rashi.localeCompare(b.rashi)));
-  //     } catch (error) {
-  //       console.error("Error fetching horoscopes:", error);
-  //     }
-  //   };
-
-  //   fetchHoroscopes();
-  // }, []);
   useEffect(() => {
     let isMounted = true;
 
@@ -48,7 +26,7 @@ const HoroscopePage = () => {
       try {
         const promises = rashis.map((rashi) =>
           axios.get(
-            `http://horoscope-api.herokuapp.com/horoscope/today/${rashi}`
+            `https://rapidapi.com/Alejandro99aru/api/horoscope-astrology"/today/${rashi}`
           )
         );
         const responses = await Promise.all(promises);
@@ -70,7 +48,7 @@ const HoroscopePage = () => {
     return () => {
       isMounted = false;
     };
-  }, []);
+  });
 
   return (
     <div className="horoscope-container">
