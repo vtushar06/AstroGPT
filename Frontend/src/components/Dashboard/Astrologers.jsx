@@ -8,31 +8,31 @@ const Astrologers = () => {
       id: 1,
       name: "Dr. Aasha parikh",
       specialty: "Vedic Astrology",
-      image: "../../../public/Astrologers/astro1.webp",
+      image: "../../../Astrologers/astro1.webp",
     },
     {
       id: 2,
       name: "Santosh Giri",
       specialty: "Numerology",
-      image: "../../../public/Astrologers/astro1.jpg",
+      image: "../../../Astrologers/astro1.jpg",
     },
     {
       id: 3,
       name: "Dr Smitha Jain",
       specialty: "Vedic Astrology",
-      image: "../../../public/Astrologers/astro2.jpg",
+      image: "../../../Astrologers/astro2.jpg",
     },
     {
       id: 4,
       name: "Aaishwarya Sharma",
       specialty: "Vedic Astrology",
-      image: "../../../public/Astrologers/astro3.jpg",
+      image: "../../../Astrologers/astro3.jpg",
     },
     {
       id: 5,
       name: "Dr Monali Garg",
       specialty: "Palmistry",
-      image: "../../../public/Astrologers/astro4.jpeg",
+      image: "../../../Astrologers/astro4.jpeg",
     },
   ];
 

@@ -26,7 +26,7 @@ const Navbar = () => {
         {/* Updated Logo with SVG */}
         <NavLink to="/" className="navbar-logo">
           <img
-            src="../../public/Icon/sun.png"
+            src="../../Icon/sun.png"
             alt="AstroGPT Logo"
             className="logo-icon"
           />

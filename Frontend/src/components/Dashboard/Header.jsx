@@ -14,7 +14,7 @@ const Header = () => {
       {/* Wrap the logo with Link to navigate to the home page */}
       <div className="logo">
         <img
-          src="../../../public/Icon/sun.png"
+          src="../../../Icon/sun.png"
           alt="AstroGPT Logo"
           className="logo-icon"
         />
@@ -39,7 +39,7 @@ const Header = () => {
       {/* Profile Section */}
       <div className="profile">
         <img
-          src="../../../public/Astrologers/my-profile-img.jpeg"
+          src="../../../Astrologers/my-profile-img.jpeg"
           alt="Profile"
           className="profile-pic"
         />

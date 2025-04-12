@@ -9,7 +9,7 @@ const BlogSection = () => {
       author: "Astrologer Aakanksha",
       date: "March 25, 2025",
       views: "92172",
-      image: "../../../public/Blogs/download3.jpg",
+      image: "../../../Blogs/download3.jpg",
       link: "https://timesofindia.indiatimes.com/astrology/zodiacs-astrology/discover-your-guardian-angel-based-on-your-zodiac-sign/articleshow/112225477.cms", // Replace with actual image URL later
     },
     {
@@ -18,7 +18,7 @@ const BlogSection = () => {
       author: "Priyanka Kumari",
       date: "March 24, 2025",
       views: "26270",
-      image: "../../../public/Blogs/download2.jpg",
+      image: "../../../Blogs/download2.jpg",
       link: "https://timesofindia.indiatimes.com/astrology/zodiacs-astrology/zodiac-signs-who-get-easily-bothered/articleshow/109399068.cms", // Replace with actual image URL later
     },
     {
@@ -27,7 +27,7 @@ const BlogSection = () => {
       author: "Astrologer Ankush",
       date: "March 24, 2025",
       views: "23054",
-      image: "../../../public/Blogs/download4.jpg", // Replace with actual image URL later
+      image: "../../../Blogs/download4.jpg", // Replace with actual image URL later
       link: "https://timesofindia.indiatimes.com/astrology/zodiacs-astrology/zodiac-signs-that-never-give-up-who-pursues-dreams-the-hardest/articleshow/116628235.cms",
     },
   ];
